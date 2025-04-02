@@ -1,1 +1,68 @@
-/* This file is intentionally left blank. */
+/* Custom Orange Palette */
+:root {
+    --primary-color: #BF5700; /* Texas Longhorns Orange */
+    --secondary-color: #FFFFFF; /* White */
+    --text-color: #333333; /* Dark Gray for text */
+}
+
+/* General Styles */
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.hero h1 {
+    color: var(--primary-color);
+}
+
+.hero .btn-light {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.hero .btn-light:hover {
+    background-color: #FFD700; /* Gold for hover effect */
+    color: var(--primary-color);
+}
+
+section {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+section h2 {
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+}
+
+#contact-us {
+    background-color: #F5F5F5; /* Light Gray */
+}

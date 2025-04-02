@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Conical Tech</a>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand text-white" href="#">Conical Tech</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -19,27 +19,55 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#introducing-hobbes">Introducing Hobbes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact-us">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero bg-primary text-white text-center py-5">
+    <header class="hero text-center py-5">
         <div class="container">
             <h1 class="display-4">Welcome to Conical Tech</h1>
             <p class="lead">Innovating the future, one step at a time.</p>
-            <a href="#" class="btn btn-light btn-lg">Learn More</a>
+            <a href="#introducing-hobbes" class="btn btn-light btn-lg">Learn More</a>
         </div>
     </header>
 
-    <footer class="bg-light text-center py-4">
+    <section id="introducing-hobbes" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Introducing Hobbes</h2>
+            <p class="lead">Hobbes is our latest innovation in AI technology, designed to revolutionize the way you interact with the digital world. With cutting-edge features and unparalleled performance, Hobbes is here to make your life easier and more efficient.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Hobbes AI" class="img-fluid rounded">
+        </div>
+    </section>
+
+    <section id="contact-us" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
         <p>&copy; 2023 Conical Tech. All rights reserved.</p>
     </footer>
 
