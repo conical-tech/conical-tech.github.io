@@ -1,17 +1,40 @@
-/* Navigation Styles */
-.navbar {
-    background-color: var(--secondary-color);
-    border-bottom: 1px solid #ddd;
+/* Custom Orange Color */
+.text-orange {
+    color: var(--primary-color) !important; /* Texas Longhorns Orange */
 }
 
-.navbar .nav-link {
-    color: var(--text-color);
+/* Brand Logo (Hollow Circle) */
+.brand-logo {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color); /* Orange border */
+    border-radius: 50%; /* Makes it circular */
+    display: inline-block;
 }
 
-.navbar .nav-link:hover {
-    color: var(--primary-color);
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    color: var(--text-color); /* Dark Gray */
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.navbar-brand {
-    color: var(--primary-color) !important;
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color); /* Orange on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color); /* Orange for active link */
+    font-weight: 700;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Light gray hover effect */
+    color: var(--primary-color); /* Orange text */
 }

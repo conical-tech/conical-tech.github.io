@@ -1,0 +1,42 @@
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+    background-size: cover;
+    color: var(--secondary-color); /* White text */
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    z-index: -1;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif; /* Scholastic serif for hero heading */
+    font-weight: 700;
+    color: var(--secondary-color); /* White */
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif for hero text */
+    font-size: 1.25rem;
+    color: var(--secondary-color); /* White */
+}
+
+.hero .btn-primary {
+    background-color: var(--primary-color); /* Orange */
+    border: none;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e65c00; /* Slightly darker orange */
+}
