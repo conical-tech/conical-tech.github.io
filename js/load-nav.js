@@ -1,5 +1,5 @@
 // Load the navigation bar from nav.html into the #navbar div
-fetch('nav.html')
+fetch('/components/nav.html')
     .then(response => {
         if (!response.ok) {
             throw new Error('Failed to load navigation bar');

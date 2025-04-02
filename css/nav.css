@@ -1,0 +1,17 @@
+/* Navigation Styles */
+.navbar {
+    background-color: var(--secondary-color);
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .nav-link {
+    color: var(--text-color);
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
