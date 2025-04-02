@@ -1,10 +1,15 @@
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center;
+    background: url('https://media.istockphoto.com/id/2160203182/photo/blur-office-with-bokeh-light-background-banner-business-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=95EnNTT7UdNXr8XkscE1CDXSoTLyGQm8cZu9cVQniP0=') no-repeat center center;
     background-size: cover;
     color: var(--secondary-color); /* White text */
     position: relative;
     z-index: 1;
+    height: 70vh; /* Reduced height to 70% of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero::before {
@@ -18,23 +23,36 @@
     z-index: -1;
 }
 
-/* Hero Section */
 .hero h1 {
     font-size: 3rem;
-    font-family: 'Merriweather', serif; /* Scholastic serif for hero heading */
-    font-weight: 700;
+    font-family: 'Playfair Display', serif; /* Modern serif for hero heading */
+    font-weight: 600; /* Medium weight for a sleek look */
     color: var(--secondary-color); /* White */
 }
 
 .hero p {
-    font-family: 'Roboto', sans-serif; /* Modern sans-serif for hero text */
-    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif; /* Modern sans-serif for hero text */
+    font-size: 1.5rem; /* Slightly larger for emphasis */
     color: var(--secondary-color); /* White */
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for tagline */
+}
+
+/* Highlighted Text */
+.hero .highlight {
+    font-weight: 600; /* Medium weight for emphasis */
+    color: var(--primary-color); /* Orange for contrast */
+    text-transform: uppercase; /* Make it stand out more */
+    letter-spacing: 1px; /* Add spacing for a modern look */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), /* Bright white glow */
+                 0 0 4px rgba(255, 255, 255, 0.6); /* Softer secondary glow */
 }
 
 .hero .btn-primary {
     background-color: var(--primary-color); /* Orange */
     border: none;
+    font-family: 'Inter', sans-serif; /* Match button font with body text */
+    font-weight: 500; /* Medium weight for buttons */
 }
 
 .hero .btn-primary:hover {
