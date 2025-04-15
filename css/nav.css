@@ -1,15 +1,18 @@
-/* Custom Orange Color */
-.text-orange {
-    color: var(--primary-color) !important; /* Texas Longhorns Orange */
-}
-
 /* Brand Logo (Hollow Circle) */
 .brand-logo {
     width: 20px;
     height: 20px;
-    border: 2px solid var(--primary-color); /* Orange border */
-    border-radius: 50%; /* Makes it circular */
+    border: 3px solid var(--primary-color); 
+    border-radius: 50%; 
     display: inline-block;
+}
+
+.brand-name {
+    font-family: var(--header-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 100; 
+    line-height: 1.0; 
 }
 
 /* Navbar Link Styles */
@@ -25,16 +28,21 @@
 
 .navbar-nav .nav-link.active {
     color: var(--primary-color); /* Orange for active link */
-    font-weight: 700;
+    font-weight: 800;
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Navbar Button Styles */
+.navbar .btn {
+    background-color: var(--primary-color); /* Set the button background color */
+    color: #fff; /* Set the button text color to white */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add slight rounding to the corners */
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+    font-weight: 600; /* Make the text bold */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.dropdown-item:hover {
-    background-color: #f8f9fa; /* Light gray hover effect */
-    color: var(--primary-color); /* Orange text */
+.navbar .btn:hover {
+    background-color: var(--accent-color-yellow); /* Change to accent color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }

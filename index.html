@@ -9,72 +9,105 @@
         <title>Conical Tech - Expert Sourced Contract Knowledge</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="css/hero.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
 <body>
     <div id="navbar"></div> <!-- Placeholder for the navigation bar -->
 
-    <header class="hero text-center py-5 text-white">
+    <!-- Hero Section -->
+    <header class="hero text-center text-white d-flex align-items-center" style="background: linear-gradient(135deg, #0C2C40, #4F99C7); height: 100vh;">
         <div class="container">
-            <!-- <h1 class="display-4 font-weight-bold">Meet Hobbes</h1> -->
-            <h2 class="font-weight-bold mb-4">
-                <del>Crowd</del><span class="highlight"> Expert </span>Sourced Contract Knowledge
-            </h2>
-            <p class="small">
-                Get answers about your technical contracts. All from expert sources.
-            </p>
-            <a href="#introducing-hobbes" class="btn btn-primary btn-lg">Learn More</a>
+            <h1 class="mb-4 text-black hero-heading">Looking for answers?</h1>
+            <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <h2 class="mb-4 text-black hero-subheading">Have contracts?</h2>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading">Need to find your POC?</h2>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading">Need a reminder to review SLAs?</h2>
+                    </div>
+                </div>
+            </div>
+            <a href="#features" class="btn btn-arrow btn-lg mt-4 px-4">
+                <i class="fas fa-arrow-down"></i> <!-- Font Awesome Down Arrow -->
+            </a>
         </div>
     </header>
 
-    <section id="introducing-hobbes" class="py-5 bg-light">
+    <section id="features" class="py-5 bg-light">
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Text Content -->
-                <div class="col-md-6 text-center text-md-left">
-                    <h2 class="mb-4 text-orange">Meet Hobbes</h2>
-                    <p class="lead">
-                        Conical is a leader in technological solutions for software development professionals. 
-                        We understand the unique challenges of the software development field and strive to create 
-                        intuitive, reliable, and easy-to-use solutions.
-                    </p>
-                    <p>
-                        Hobbes is our latest innovation in AI technology, designed to revolutionize the way you 
-                        interact with the digital world. With cutting-edge features and unparalleled performance, 
-                        Hobbes is here to make your life easier and more efficient.
-                    </p>
+            <!-- <h2 class="text-center text-dark mb-5">Why Choose Conical Tech?</h2> -->
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-12 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <!-- TODO ADD PICS -->
+                            <img src="https://via.placeholder.com/500x300" alt="AI-Powered Insights" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 p-4 text-center">
+                                <h5 class="text-primary font-weight-bold">AI-Powered Insights</h5>
+                                <p class="text-muted">Leverage the power of AI to analyze and understand your technical contracts.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
-                <!-- Image -->
-                <div class="col-md-6 text-center">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fFRlY2h8ZW58MHx8MHx8fDA%3D" alt="Hobbes AI" class="img-fluid rounded shadow">
+                <!-- Feature 2 -->
+                <div class="col-12 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-2">
+                            <!-- TODO ADD PICS -->
+                            <img src="https://via.placeholder.com/500x300" alt="Expert-Sourced Knowledge" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6 order-md-1">
+                            <div class="card border-0 p-4 text-center">
+                                <h5 class="text-primary font-weight-bold">Expert-Sourced Knowledge</h5>
+                                <p class="text-muted">Get answers from trusted sources, ensuring accuracy and reliability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-12 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <!-- TODO ADD PICS -->
+                            <img src="https://via.placeholder.com/500x300" alt="Seamless Integration" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 p-4 text-center">
+                                <h5 class="text-primary font-weight-bold">Seamless Integration</h5>
+                                <p class="text-muted">Integrate Hobbes into your workflow with tools like Slack and more.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact-us" class="py-5">
+    <!-- Contact Section -->
+     <!-- TODO: make this wayyy bigger, this is why they came -->
+    <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    </div>
+            <h2 class="text-center text-dark mb-5">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <p><strong>Email:</strong> <a href="mailto:info@conicaltech.com" class="text-primary">info@conicaltech.com</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+18005555555" class="text-primary">+1 (800) 555-5555</a></p>
+                    <p><strong>Address:</strong> 123 Innovation Drive, Tech City, TX 75001</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 

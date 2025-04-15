@@ -1,32 +1,70 @@
-
-/* Color Pallette */
+/* Color Palette */
 :root {
-    --primary-color: #BF5700; 
-    --secondary-color: #FFFFFF; 
-    --text-color: #333333; /* Dark Gray for text */
+    --primary-color: #0C2C40; /* Vibrant Blue */
+    --primary-color-light: #4F99C7;
+    --secondary-color: #F5F7FA; /* Soft Gray */
+    --accent-color: #00D084; /* Bright Green */
+    --accent-color-yellow: #F5B630; /* Bright Green */
+    --accent-color-orange: #A64005; /* Bright Green */
+    --accent-color-red: #59210C;
+    --text-color: #333333; /* Dark Gray */
+    --header-font: 'Manrope', sans-serif; /* Modern sans-serif font */
 }
 
-/* Global Font Settings */
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Modern sans-serif for body text */
-    color: var(--text-color); /* Dark gray for readability */
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif; /* Scholastic serif for headings */
-    font-weight: 700; /* Bold for emphasis */
-    color: var(--primary-color); /* Orange for headings */
+    font-family: var(--header-font) !important; /* Modern sans-serif font for headers */
+    font-weight: 600;
 }
 
-p {
-    font-family: 'Roboto', sans-serif; /* Clean sans-serif for paragraphs */
-    font-size: 1rem;
-    color: var(--text-color); /* Dark gray */
+a {
+    text-decoration: none;
 }
 
-section {
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* Features Section */
+.card {
+    border-radius: 8px;
     background-color: var(--secondary-color);
-    color: var(--text-color);
 }
 
+.card h5 {
+    font-size: 1.25rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #6c757d; /* Muted text */
+}
+
+#features .card {
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    min-height: 250px; /* Set a minimum height for taller cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+}
