@@ -18,22 +18,63 @@
     <div id="navbar"></div> <!-- Placeholder for the navigation bar -->
 
     <!-- Hero Section -->
-    <header class="hero text-center text-white d-flex align-items-center" style="background: linear-gradient(135deg, #0C2C40, #4F99C7); height: 100vh;">
+    <header class="hero text-center text-white d-flex align-items-center" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-color-light)); height: 100vh;">
         <div class="container">
             <h1 class="mb-4 text-black hero-heading">Looking for answers?</h1>
             <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
-                        <h2 class="mb-4 text-black hero-subheading">Have contracts?</h2>
+                        <h2 class="mb-4 text-black hero-subheading">What is our monthly spend?</h2>
                     </div>
                     <!-- Slide 2 -->
                     <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading">Need to find your POC?</h2>
+                        <h2 class="mb-4 text-black hero-subheading">Who is our point of contact for this contract?</h2>
                     </div>
                     <!-- Slide 3 -->
                     <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading">Need a reminder to review SLAs?</h2>
+                        <h2 class="mb-4 text-black hero-subheading">When is our contract renewal?</h2>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading">What is our rate limit?</h2>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading">What is the SLA for this service?</h2>
+                    </div>
+                </div>
+            </div>
+            <a href="#hobbesCarousel" class="btn btn-arrow btn-lg mt-4 px-4">
+                <i class="fas fa-arrow-down"></i> <!-- Font Awesome Down Arrow -->
+            </a>
+        </div>
+    </header>
+
+    <header class="hero text-center text-white d-flex align-items-center" style="background: linear-gradient(135deg, var(--accent-color-yellow), var(--accent-color-orange)); height: 80vh;">
+        <div class="container">
+            <h1 class="mb-4 text-black hero-heading">Meet Hobbes</h1>
+            <div id="hobbesCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <h2 class="mb-4 text-black hero-subheading-alt">Your monthly spend is $15k for this contract.</h2>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading-alt">You can call Frank Zappa.</h2>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading-alt">This contract renews on December 31, 1999.</h2>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading-alt">The limit does not exist. Just kidding, its 100 / second.</h2>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <h2 class="mb-4 text-black hero-subheading-alt">You can expect an uptime of 99.99%.</h2>
                     </div>
                 </div>
             </div>
@@ -42,56 +83,58 @@
             </a>
         </div>
     </header>
-
     <section id="features" class="py-5 bg-light">
         <div class="container">
             <!-- <h2 class="text-center text-dark mb-5">Why Choose Conical Tech?</h2> -->
+             <div class="text-center mb-5">
+                <h2>Upload, ask, and get back to your day.</h2>
+                <p class="text-muted">Hobbes is the AI-powered platform that understands your technical contracts so you don't have to.</p>
+
             <div class="row">
+             <div class="col-12 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-1">
+                        <div class="card border-0 p-4 text-center">
+                            <h5 class="text-primary font-weight-bold">Upload any contract, in any format</h5>
+                            <p class="text-muted">Hobbes can parse and categorize the contract information from any format so that we can be the expert of your contracts.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-2">
+                        <!-- TODO ADD PICS -->
+                        <img src="https://via.placeholder.com/500x300" alt="Expert-Sourced Knowledge" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="./Slack_icon_2019.svg" alt="Seamless Integration" class="img-fluid rounded shadow">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 p-4 text-center">
+                            <h5 class="text-primary font-weight-bold">Ask any question, at any time</h5>
+                            <p class="text-muted">Whenever you have a question about your contracts, Hobbes is ready to answer you where you work. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <!-- Feature 1 -->
                 <div class="col-12 mb-5">
                     <div class="row align-items-center">
                         <div class="col-md-6">
-                            <!-- TODO ADD PICS -->
-                            <img src="https://via.placeholder.com/500x300" alt="AI-Powered Insights" class="img-fluid rounded shadow">
+                            <div class="card border-0 p-4 text-center">
+                                <h5 class="text-primary font-weight-bold">Get the answer, that you can trust</h5>
+                                <p class="text-muted">Ask any question about your contracts, Hobbes knows how to find the right answer from within your contract.</p>
+                            </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="card border-0 p-4 text-center">
-                                <h5 class="text-primary font-weight-bold">AI-Powered Insights</h5>
-                                <p class="text-muted">Leverage the power of AI to analyze and understand your technical contracts.</p>
-                            </div>
+                            <!-- TODO ADD PICS -->
+                            <img src="" alt="AI-Powered Insights" class="img-fluid rounded shadow">
                         </div>
                     </div>
                 </div>
-                <!-- Feature 2 -->
-                <div class="col-12 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-2">
-                            <!-- TODO ADD PICS -->
-                            <img src="https://via.placeholder.com/500x300" alt="Expert-Sourced Knowledge" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6 order-md-1">
-                            <div class="card border-0 p-4 text-center">
-                                <h5 class="text-primary font-weight-bold">Expert-Sourced Knowledge</h5>
-                                <p class="text-muted">Get answers from trusted sources, ensuring accuracy and reliability.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Feature 3 -->
-                <div class="col-12 mb-5">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <!-- TODO ADD PICS -->
-                            <img src="https://via.placeholder.com/500x300" alt="Seamless Integration" class="img-fluid rounded shadow">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card border-0 p-4 text-center">
-                                <h5 class="text-primary font-weight-bold">Seamless Integration</h5>
-                                <p class="text-muted">Integrate Hobbes into your workflow with tools like Slack and more.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

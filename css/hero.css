@@ -1,7 +1,9 @@
 /* Hero Section Headings */
 .hero {
     text-align: left !important; /* Align all text in the hero section to the left */
+    background: linear-gradient(135deg, var(--primiary-color), var(--primary-color-light));
 }
+
 .hero-heading {
     font-family: var(--header-font); /* Modern sans-serif font for headers */
     font-size: 8rem; /* Make the main heading much larger */
@@ -15,6 +17,13 @@
     font-weight: 600; /* Slightly less bold than the main heading */
     line-height: 1.5; /* Adjust line height for readability */
     color: var(--accent-color-yellow) !important; /* Dark Gray */
+}
+.hero-subheading-alt {
+    font-family: var(--header-font) !important; /* Modern sans-serif font for headers */
+    font-size: 4rem !important; /* Make the subheading larger */
+    font-weight: 600; /* Slightly less bold than the main heading */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: var(--accent-color-red) !important; /* Dark Gray */
 }
 
 /* Button Styling for Arrow */
