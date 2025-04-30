@@ -1,131 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Conical Tech - Get answers about your technical contracts from expert sources. Revolutionizing AI technology for software development professionals.">
-        <meta name="keywords" content="Conical Tech, AI technology, software development, contract knowledge, expert sources">
-        <meta name="author" content="Conical Tech">
-        <title>Conical Tech - Expert Sourced Contract Knowledge</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="css/hero.css">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conical Tech - Get answers about your technical contracts from expert sources. Revolutionizing AI technology for software development professionals.">
+    <meta name="keywords"
+        content="Conical Tech, AI technology, software development, contract knowledge, expert sources">
+    <meta name="author" content="Conical Tech">
+    <title>Conical Tech - Expert Sourced Contract Knowledge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
 <body>
-    <div id="navbar"></div> <!-- Placeholder for the navigation bar -->
-
+    <div id="navbar"></div>
     <!-- Hero Section -->
-    <header class="hero text-center text-white d-flex align-items-center" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-color-light)); height: 100vh;">
+    <container class="hero d-flex align-items-center hero-blue">
         <div class="container">
-            <h1 class="mb-4 text-black hero-heading">Looking for answers?</h1>
-            <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <h2 class="mb-4 text-black hero-subheading">What is our monthly spend?</h2>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading">Who is our point of contact for this contract?</h2>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading">When is our contract renewal?</h2>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading">What is our rate limit?</h2>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading">What is the SLA for this service?</h2>
-                    </div>
+            <section class="container chat-container">
+                <div class="chat-header"></div>
+                <!-- Box 1 -->
+                <div class="chat-window">
+                    <div class="bubble right">What is our monthly spend?</div>
+                    <div class="bubble right">Who is our point of contact for this contract?</div>
+                    <div class="bubble right">When is our contract renewal?</div>
+                    <div class="bubble right">What is our rate limit?</div>
+                    <div class="bubble right">What is the SLA for this service?</div>
+                    <div class="bubble left">•••</div>
                 </div>
-            </div>
-            <a href="#hobbesCarousel" class="btn btn-arrow btn-lg mt-4 px-4">
-                <i class="fas fa-arrow-down"></i> <!-- Font Awesome Down Arrow -->
+                <div class="chat-footer">
+                    <input type="text" placeholder="..." disabled="true">
+                    <div class="chat-footer-button">Send</div>
+                </div>
+            </section>
+            <h1 class="mb-4 text-black hero-heading"
+                style="color: var(--primary-color); justify-content:center; margin-top: 10vw;">Looking for answers?
+            </h1>
+            <a href="#hobbes-start" class="btn btn-arrow btn-lg mt-4 px-4 container">
+                <i class="fas fa-arrow-down"></i>
             </a>
         </div>
-    </header>
 
-    <header class="hero text-center text-white d-flex align-items-center" style="background: linear-gradient(135deg, var(--accent-color-yellow), var(--accent-color-orange)); height: 80vh;">
+    </container>
+
+    <container id="hobbes-start" class="hero d-flex align-items-center hero-orange">
         <div class="container">
-            <h1 class="mb-4 text-black hero-heading">Meet Hobbes</h1>
-            <div id="hobbesCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-                <div class="carousel-inner">
-                    <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <h2 class="mb-4 text-black hero-subheading-alt">Your monthly spend is $15k for this contract.</h2>
+            <section class="carousel slide" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner container" style="max-width: 600px;">
+                    <div class="carousel-item active ">
+                        <section class="container chat-container">
+                            <div class="chat-header"></div>
+                            <div class="chat-window">
+                                <div class="bubble right">What is our monthly spend?</div>
+                                <div class="bubble left">Your monthly spend is $15k. </div>
+                                <div class="chat-footer">
+                                    <input type="text" placeholder="..." disabled="true">
+                                    <div class="chat-footer-button">Send</div>
+                                </div>
+                        </section>
                     </div>
-                    <!-- Slide 2 -->
                     <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading-alt">You can call Frank Zappa.</h2>
+                        <section class="container chat-container">
+                            <div class="chat-header"></div>
+                            <div class="chat-window">
+                                <div class="bubble right">Who is our point of contact for this contract?</div>
+                                <div class="bubble left">You can call Gerald at...</div>
+                                <div class="chat-footer">
+                                    <input type="text" placeholder="..." disabled="true">
+                                    <div class="chat-footer-button">Send</div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <!-- Slide 3 -->
                     <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading-alt">This contract renews on December 31, 1999.</h2>
+                        <section class="container chat-container">
+                            <div class="chat-header"></div>
+                            <div class="chat-window">
+                                <div class="bubble right">When is our contract renewal?</div>
+                                <div class="bubble left">This contract renews on December 31, 1999.</div>
+                                <div class="chat-footer">
+                                    <input type="text" placeholder="..." disabled="true">
+                                    <div class="chat-footer-button">Send</div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <!-- Slide 4 -->
                     <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading-alt">The limit does not exist. Just kidding, its 100 / second.</h2>
+                        <section class="container chat-container">
+                            <div class="chat-header"></div>
+                            <div class="chat-window">
+                                <div class="bubble right">What is our rate limit?</div>
+                                <div class="bubble left">The rate limit is 100 / second.</div>
+                                <div class="chat-footer">
+                                    <input type="text" placeholder="..." disabled="true">
+                                    <div class="chat-footer-button">Send</div>
+                                </div>
+                            </div>
+                        </section>
                     </div>
-                    <!-- Slide 5 -->
                     <div class="carousel-item">
-                        <h2 class="mb-4 text-black hero-subheading-alt">You can expect an uptime of 99.99%.</h2>
+                        <section class="container chat-container">
+                            <div class="chat-header"></div>
+                            <div class="chat-window">
+                                <div class="bubble right">What is the SLA for this service?</div>
+                                <div class="bubble left">You can expect an uptime of 99.99%.</div>
+                                <div class="chat-footer">
+                                    <input type="text" placeholder="..." disabled="true">
+                                    <div class="chat-footer-button">Send</div>
+                                </div>
+                        </section>
                     </div>
                 </div>
-            </div>
-            <a href="#features" class="btn btn-arrow btn-lg mt-4 px-4">
-                <i class="fas fa-arrow-down"></i> <!-- Font Awesome Down Arrow -->
+            </section>
+            <h1 class="hero-heading text-black"
+                style="color:var(--accent-color-red); justify-content:center; margin-top: 10vw;">Meet Hobbes</h1>
+            <a href="#features" class="btn btn-arrow btn-lg mt-4 px-4 container">
+                <i class="fas fa-arrow-down"></i>
             </a>
         </div>
-    </header>
+    </container>
+
+
     <section id="features" class="py-5 bg-light">
         <div class="container">
-            <!-- <h2 class="text-center text-dark mb-5">Why Choose Conical Tech?</h2> -->
-             <div class="text-center mb-5">
+            <div class="text-center mb-5">
                 <h2>Upload, ask, and get back to your day.</h2>
-                <p class="text-muted">Hobbes is the AI-powered platform that understands your technical contracts so you don't have to.</p>
-
+            </div>
+            <!-- <h2 class="text-center text-dark mb-5">Why Choose Conical Tech?</h2> -->
             <div class="row">
-             <div class="col-12 mb-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1">
-                        <div class="card border-0 p-4 text-center">
-                            <h5 class="text-primary font-weight-bold">Upload any contract, in any format</h5>
-                            <p class="text-muted">Hobbes can parse and categorize the contract information from any format so that we can be the expert of your contracts.</p>
+                <div class="col-12 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-1">
+                            <div class="card border-0 p-4 text-center">
+                                <h5 class="text-primary font-weight-bold">Upload any contract in any format
+                                </h5>
+                                <p class="text-muted">Hobbes can parse and categorize the contract information
+                                    from any
+                                    format so that we can be the expert of your contracts.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-2">
+                            <!-- TODO ADD PICS -->
+                            <img src="https://via.placeholder.com/500x300" alt="Expert-Sourced Knowledge"
+                                class="img-fluid rounded shadow">
                         </div>
                     </div>
-                    <div class="col-md-6 order-md-2">
-                        <!-- TODO ADD PICS -->
-                        <img src="https://via.placeholder.com/500x300" alt="Expert-Sourced Knowledge" class="img-fluid rounded shadow">
-                    </div>
                 </div>
-            </div>
 
-            <div class="col-12 mb-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="./Slack_icon_2019.svg" alt="Seamless Integration" class="img-fluid rounded shadow">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card border-0 p-4 text-center">
-                            <h5 class="text-primary font-weight-bold">Ask any question, at any time</h5>
-                            <p class="text-muted">Whenever you have a question about your contracts, Hobbes is ready to answer you where you work. </p>
+                <div class="col-12 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 hobbes-chat">
+                            <section class="container chat-container">
+                                <div class="chat-header"></div>
+                                <div class="chat-window">
+                                    <div class="bubble right">What is our monthly spend?</div>
+                                    <div class="bubble left">Your monthly spend is $15k for this contract.</div>
+                                    <div class="bubble right">How close are we to renewal?</div>
+                                    <div class="bubble left">You are 37 days out.</div>
+                                    <div class="chat-footer">
+                                        <input type="text" placeholder="..." disabled="true">
+                                        <div class="chat-footer-button">Send</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 p-4 text-center">
+                                <h5 class="text-primary font-weight-bold">Ask any question at any time</h5>
+                                <p class="text-muted">Whenever you have a question about your contracts, Hobbes
+                                    is ready
+                                    to answer you where you work. </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
                 <!-- Feature 1 -->
                 <div class="col-12 mb-5">
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="card border-0 p-4 text-center">
-                                <h5 class="text-primary font-weight-bold">Get the answer, that you can trust</h5>
-                                <p class="text-muted">Ask any question about your contracts, Hobbes knows how to find the right answer from within your contract.</p>
+                                <h5 class="text-primary font-weight-bold">Get an answer that you can trust
+                                </h5>
+                                <p class="text-muted">Ask any question about your contracts, Hobbes knows how to
+                                    find
+                                    the right answer from within your contract.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -134,21 +200,20 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-     <!-- TODO: make this wayyy bigger, this is why they came -->
+    <!-- TODO: make this wayyy bigger, this is why they came -->
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center text-dark mb-5">Contact Us</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <p><strong>Email:</strong> <a href="mailto:info@conicaltech.com" class="text-primary">info@conicaltech.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:+18005555555" class="text-primary">+1 (800) 555-5555</a></p>
-                    <p><strong>Address:</strong> 123 Innovation Drive, Tech City, TX 75001</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@conicaltech.com"
+                            class="text-primary">info@conical-tech.com</a></p>
                 </div>
             </div>
         </div>
@@ -163,4 +228,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

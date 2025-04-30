@@ -11,6 +11,10 @@
     --header-font: 'Manrope', sans-serif; /* Modern sans-serif font */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Global Styles */
 body {
     font-family: 'Inter', sans-serif;
@@ -67,4 +71,12 @@ a:hover {
 footer {
     background-color: #333333;
     color: #ffffff;
+}
+
+.container {
+    padding: 0px;
+}
+
+.inline {
+    display: inline-block;
 }
